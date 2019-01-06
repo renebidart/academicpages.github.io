@@ -4,7 +4,6 @@ date:   2018-12-04
 author: Rene Bidart
 ---
 
-# 3D Pose Estimation Datasets
 ## Overview
 
 2D pose estimation has improved immensely over the past few years, partly because of wealth of data stemming from the ease of annotating any RGB video. 3D pose annotation is much more difficult because accurate 3D pose annotation requires using motion capture in indoor artificial settings.

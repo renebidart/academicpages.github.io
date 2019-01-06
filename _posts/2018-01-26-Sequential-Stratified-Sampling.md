@@ -4,7 +4,7 @@ date:   2018-1-27
 author: Rene Bidart
 ---
 
-#### Stratified Sampling 
+#### Stratified Sampling
 We want to get the estimate the mean of a population, and this population is broken into different groups. As long as these groups are homogeneous, we can produce a better estimate by estimating the means of the groups individually. For example, we could estimate the mean math ability of students in Ontario by dividing it up by schools. By allocating more samples to the schools with higher number of students and variance in ability, we can get a better estimate overall. 
 
 Back in 1934 [Jerzy Neyman](http://www.stat.cmu.edu/~brian/905-2008/papers/neyman-1934-jrss.pdf) proved that the optimal way to allocate the number of samples for each stratum, $$n_h$$ is proportional to its standard deviation, $$\sigma_{yh}$$, and its size, $$W_h$$: 

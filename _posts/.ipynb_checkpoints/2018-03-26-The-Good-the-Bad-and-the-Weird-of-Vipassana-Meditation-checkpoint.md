@@ -4,8 +4,6 @@ date:   2018-3-10
 author: Rene Bidart
 ---
 
-# The Good, the Bad and the Weird of Vipassana Meditation
-
 I completed the 10 day silent Vipassana Meditation course at the Dhamma Torana center outside Toronto, Canada. It was my first meditation course, and it was an interesting mix of enlightenment and a big test of self control.
 
 **tl;dr:**  

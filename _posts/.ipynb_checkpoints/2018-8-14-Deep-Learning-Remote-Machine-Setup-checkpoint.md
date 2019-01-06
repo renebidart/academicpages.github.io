@@ -4,7 +4,6 @@ date:   2018-8-14
 author: Rene Bidart
 ---
 
-# Deep Learning Remote Machine Setup
 ## Basic Set Up
 To do any deep learning, you'll either need to have set up a VM at a cloud provider (AWS, Azure or paperspace, google, etc.), unless you happen to have a gpu lying around. Most commonly these will be using a linux distribution like Ubuntu 16.04
 

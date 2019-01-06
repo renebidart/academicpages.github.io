@@ -84,7 +84,7 @@ author:
   avatar           : "2018_headshot.jpg"
   bio              : "PhD student at University of Waterloo researching machine learning for computer vision"
   location         : "Waterloo, Canada"
-  employer         : "University of Waterloo"
+  employer         : # "University of Waterloo"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            : "renebidart@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
