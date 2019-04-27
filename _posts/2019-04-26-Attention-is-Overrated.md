@@ -39,9 +39,6 @@ By looking at the performance of CNN, RNN and the transformer on on subject-verb
 [A Targeted Evaluation of Neural Machine Translation Architectures](https://arxiv.org/pdf/1808.08946.pdf)* |
 
 
-https://www.reddit.com/r/MachineLearning/comments/9t88jj/r_you_may_not_need_attention_summary_pytorch_code/
-
-
 ### The Alternative: Lightweight, Dynamic Convolutions
 
 In [Pay Less Attention with Lightweight and Dynamic Convolutions](https://openreview.net/pdf?id=SkVhlh09tX), they propose an alternative to self in the form of a two modified convolution layers:
@@ -65,8 +62,7 @@ Using the Depthwise convolution reduces the parameters required from $d^2k$ to $
 
 | ![compare-conv.png](/images/post_imgs/att-overrated/compare-conv.png) |
 |:--:| 
-| *Comparison of self attention, Lightweight convolution and dynamic convolution from [Pay Less Attention with Lightweight and Dynamic Convolutions](https://openreview.net/pdf?id=SkVhlh09tX)
-* |
+| *Comparison of self attention, Lightweight convolution and dynamic convolution from [Pay Less Attention with Lightweight and Dynamic Convolutions](https://openreview.net/pdf?id=SkVhlh09tX)* |
 
 #### Dynamic Convolutions
 Dynamic convolutions are an extension of lightweight convolutions, where at each time step a different convolution kernel is created using a linear function. The weights depend only on the current location, not using global context. As indicated below, the dynamic convolution is crucial to get state-of-the-art performance without using self-attention.
