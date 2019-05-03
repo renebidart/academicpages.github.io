@@ -1,12 +1,12 @@
 ---
 title:  "Attention is Overrated"
-date:   2018-04-26
+date:   2019-04-26
 author: Rene Bidart
 ---
 
 ## Attention
 
-In the past the standard design of NLP models, was based on recurrent neural networks (RNN)  to ensure the model can encode long range dependencies necessary in language modelling. This assumption was called into question with the development of the [Transformer](https://arxiv.org/pdf/1706.03762.pdf), a model where instead of RNNs, self-attention layers are used. The transformer is composed of an encodeer and decoder stack of alternating pointwise fully-connected and self-attention layers:
+In the past the standard design of NLP models, was based on recurrent neural networks (RNN)  to ensure the model can encode long range dependencies necessary in language modelling. This assumption was called into question with the development of the [Transformer](https://arxiv.org/pdf/1706.03762.pdf), a model where instead of RNNs, self-attention layers are used. The transformer is composed of an encoder and decoder stack of alternating pointwise fully-connected and self-attention layers:
 
 | ![transformer.png](/images/post_imgs/att-overrated/transformer.png) |
 |:--:| 
@@ -26,7 +26,7 @@ Attention has a quadratic complexity in input length, meaning attention doesn't 
 |:--:| 
 | *From the [Transformer](https://arxiv.org/pdf/1706.03762.pdf) paper* |
 
-This is because for each position (there are n), we need to attend to every other position in the input (there are also n), for a total of d dimensions in each location, so in total there are $n^2d$ operations needed, where d is the dimension of the input.
+This is because for each position (there are n), we need to attend to every other position in the input (there are also n), for a total of d dimensions in each location, so in total there are $$n^2d$$ operations needed, where d is the dimension of the input.
 
 ### Limitations of Attention for Long Range Dependencies
 People had speculated that the reason attention was so useful was because it could more easily model long range dependencies in the input, but a recent [paper](https://arxiv.org/pdf/1808.08946.pdf) has shown this to be incorrect. 
@@ -56,9 +56,9 @@ Lightweight convolutions leverage an innovation that is commonly used in vision 
 | *As shown in [MobileNet](https://arxiv.org/pdf/1704.04861.pdf), depthwise convolutions apply a single filter for each channel.* |
 
 
-**Weight Sharing** across channels is also added to the depthwise convolution to further reduce the number of parameters. They use the same weights across multiple channels, for a total of H independent weights. In the paper they used a value of $H=16$, so instead of learning 1024 different filters, only 16 are learned, in the case that there are 1024 channels.
+**Weight Sharing** across channels is also added to the depthwise convolution to further reduce the number of parameters. They use the same weights across multiple channels, for a total of H independent weights. In the paper they used a value of $$H=16$$, so instead of learning 1024 different filters, only 16 are learned, in the case that there are 1024 channels.
 
-Using the Depthwise convolution reduces the parameters required from $d^2k$ to $dk$, where d is the number of channels, and k is filter width. The addition of weight sharing further reduces the number from $dk$ to $Hk$.
+Using the Depthwise convolution reduces the parameters required from $$d^2k$$ to $$dk$$, where d is the number of channels, and k is filter width. The addition of weight sharing further reduces the number from $$dk$$ to $$Hk$$.
 
 | ![compare-conv.png](/images/post_imgs/att-overrated/compare-conv.png) |
 |:--:| 
@@ -69,13 +69,13 @@ Dynamic convolutions are an extension of lightweight convolutions, where at each
 
 
 ### Results
-They compared the lightweight and dynamic convolutions to the Transformer Big model. For the convolution models, they swapped out the self attention layers with convolution, and increased the blocks increased to 7 in order to keep the number of parameters in both models consistent. Kernel sizes are increased in the deeper blocks, with kernel sizes of  of 3, 7, 15 and 31x4, and $H=16$ for all blocks.
+They compared the lightweight and dynamic convolutions to the Transformer Big model. For the convolution models, they swapped out the self attention layers with convolution, and increased the blocks increased to 7 in order to keep the number of parameters in both models consistent. Kernel sizes are increased in the deeper blocks, with kernel sizes of  of 3, 7, 15 and 31x4, and $$H=16$$ for all blocks.
 
 Lightweight convolutions are competitive with the best methods despite their simplicity,  and dynamic Convolutions get state of the art on English-German translation. This shows that self-attention isn't necessary, and can be replaced with simpler and less computationally expensive convolutions
 
 In addition, this paper did a great ablation study to see exactly where the benefits of this model come from. They showed:
 * Wide convolution kernels are necessary to replace self attention
-* Weight sharing (H=1024 to H=16) doesn’t hurt performance
+* Weight sharing ($$H=1024$$ to $$H=16$$) doesn’t hurt performance
 * Self-attention works even with limited context size
 * Dynamic convolution helps, but softmax normalization is needed for convergence
 
