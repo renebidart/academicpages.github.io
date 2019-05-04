@@ -6,6 +6,7 @@ author: Rene Bidart
 
 ## Limitations of Variational Autoencoders
 Deep learning models are powerful, but don’t always generalize well to out of distribution samples. For example, people have no problem understanding slightly rotated digits:
+
 | ![mnist_batch_rot.png](/images/post_imgs/avae/mnist_batch_rot.png) |
 |:--:|
 | *Rotated MNIST* |
@@ -17,6 +18,7 @@ But Variational Autoencoders (VAE) do not generalize to this change in distribut
 | *Images after being encoded by VAE after various rotations. Performance decreases with increased rotation.* |
 
 In a little more detail, look at the loss when MNIST digits are encoded at different rotations:
+
 | ![vae_loss_rotation.png](/images/post_imgs/avae/vae_loss_rotation.png) |
 |:--:|
 | *VAE's loss on various rotation.* |
