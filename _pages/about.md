@@ -8,6 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I'm a PhD sudent at the University of Waterloo. I'm in the vision and information processing lab, supervised by Alexander Wong. I'm researching computer vision, creating more robust convolutional neural networks. In the past I've worked on medical imaging.
-
-[//]: # "In particular, I'm working on imposing more structure on networks through priors on feature activation sets, ..."
+I'm a PhD student at the University of Waterloo. I'm in the vision and information processing lab, supervised by Alexander Wong. I am researching deep learning, and am working on more general architecture search. In the past I've worked on medical imaging.
