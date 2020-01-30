@@ -1,5 +1,5 @@
 ---
-title:  "Open Research 0 - Past"
+title:  "Open Research 0 Past"
 date:   2020-01-25
 author: Rene Bidart
 ---
