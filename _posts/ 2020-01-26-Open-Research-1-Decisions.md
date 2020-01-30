@@ -1,6 +1,6 @@
 ---
 title:  "Open Research 1: Decisions"
-date:   2020-01-17
+date:   2020-01-26
 author: Rene Bidart
 ---
 
