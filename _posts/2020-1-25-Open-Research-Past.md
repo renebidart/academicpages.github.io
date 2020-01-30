@@ -1,9 +1,8 @@
 ---
-title:  "Open Research 0 Past"
-date:   2020-01-25
+title:  "Open Research 0: Past"
+date:   2020-1-25
 author: Rene Bidart
 ---
-
 ## My Deep Learning PhD Journey (so far)
 I'm a third year PhD student, and my whole process for this has been a bit of a mess. This is my attempt at a thinking out loud for a better process. 
 
