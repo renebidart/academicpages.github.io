@@ -4,7 +4,6 @@ date:   2020-1-25
 author: Rene Bidart
 ---
 ## My Deep Learning PhD Journey (so far)
-I'm a third year PhD student, and my whole process for this has been a bit of a mess. This is my attempt at a thinking out loud for a better process. 
 
 ### 2016-2017 Pre-PhD
 After messing around with some MMA fight prediction in my undergrad I became interested in machine learning, and decided the best route was to take a masters in statistics. I went to my Waterloo after not being able to defer my acceptance to UofT, and being scared of paying rent in Toronto. I had never visited Waterloo, or had much of a clue what a masters degree or research might entail, only the dream of doing machine learning research.
