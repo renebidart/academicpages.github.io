@@ -1,5 +1,5 @@
 ---
-title:  "Open Research 4: Abandoning Weight Sharing, Bitter Lessons and Reasonable Ambition
+title:  "Open Research 4: Abandoning Weight Sharing, Bitter Lessons and Reasonable Ambition"
 date:   2020-2-23
 author: Rene Bidart
 ---

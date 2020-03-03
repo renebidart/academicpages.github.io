@@ -32,6 +32,7 @@ sudo apt-get install tmux
 ```
 
 | ![screen.png](/images/post_imgs/ml-workflow/screen.png) |
+|---------------------------------------------------------|
 |:--:| 
 | *Without Tmux* |
 
