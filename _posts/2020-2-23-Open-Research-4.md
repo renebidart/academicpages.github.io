@@ -1,10 +1,8 @@
 ---
-title:  "Open Research 4: Abandoning weight sharing, bitter lessons and reasonable ambition
-
+title:  "Open Research 4: Abandoning Weight Sharing, Bitter Lessons and Reasonable Ambition
 date:   2020-2-23
 author: Rene Bidart
 ---
-
 ## Disentangled Representations, Bitter Lessons, and the Edge of Ability
 For a long time I've been obsessed with the idea of learning disentangled representations of the world. The general problem of learning disentangled representations is [impossible without assumptions](https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html), just like how there is [no classsifier to rule them all](https://www.mitpressjournals.org/doi/abs/10.1162/neco.1996.8.7.1341). Luckily just like we can construct useful classifiers by making some general assumptions about the structure of the world, we can make assumptions to learn disentangled representations. 
 

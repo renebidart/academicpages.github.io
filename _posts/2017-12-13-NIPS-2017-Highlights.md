@@ -11,6 +11,7 @@ Like many of the attendees, this was my first NIPS conference. Overall a great e
 Money is flooding in from everywhere in AI, with desperate investors trying to get a piece of the pie. Free alcohol and parties every night was unexpected for an academic conference:
 
 | ![flo-rida.png](/images/post_imgs/NIPS-2017/flo-rida.png) |
+|-----------------------------------------------------------|
 |:--:| 
 | *If this doesn’t signal a bubble I don’t know what does* |
 

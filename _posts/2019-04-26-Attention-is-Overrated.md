@@ -9,6 +9,7 @@ author: Rene Bidart
 In the past the standard design of NLP models, was based on recurrent neural networks (RNN)  to ensure the model can encode long range dependencies necessary in language modelling. This assumption was called into question with the development of the [Transformer](https://arxiv.org/pdf/1706.03762.pdf), a model where instead of RNNs, self-attention layers are used. The transformer is composed of an encoder and decoder stack of alternating pointwise fully-connected and self-attention layers:
 
 | ![transformer.png](/images/post_imgs/att-overrated/transformer.png) |
+|---------------------------------------------------------------------|
 |:--:| 
 | *The Transformer. If this isn't familiar check out the [paper](https://arxiv.org/pdf/1706.03762.pdf) or this great [blog](https://jalammar.github.io/illustrated-transformer/)* |
 
