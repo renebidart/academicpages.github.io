@@ -24,12 +24,13 @@ We tested this for rotations, translations, and rotations + translations.
 
 We found for rotations, the global optima can be reached for roations around $15^\circ$ for simple objects like a dresser (basically a cube), but this is less consistent with more complex objects like a chair or desk. Rotations of over $45^\circ$ rarely find the global optimia for any object:
 
-    | Object      | $15^\circ$ mse | $30^\circ$ mse |$45^\circ$ mse |
-    | ----------- | -------------- | -------------- |-------------- |
-    | Sofa        | 3.2            | 13.2           |   30.3        |
-    | Dresser     | 3.6            | 15.6           |   36.0        |
-    | Night stand | 5.5            | 25.6           |   64.2        |
-    
+| Object      | $15^\circ$ mse | $30^\circ$ mse | $45^\circ$ mse |
+|-------------|:--------------:|:--------------:|:--------------:|
+| Sofa        | 3.2            | 13.2           | 30.3           |
+| Dresser     | 3.6            | 15.6           | 36.0           |
+| Night stand | 5.5            | 25.6           | 64.2           |
+
+   
 Translations seem to be easier to optimize, and translations of $20\%$ of the with can be optimized nearly perfectly. Rotations + translations was extremely difficult, and any substantial rotation + translation meant that frequently the global optima wasn't reached, even for simple objects.
 
 For this reason we will have to incorporate random restarts into the optimization process, because gradient descent alone frequently is caught in local minima when optimizing affine transforms.
